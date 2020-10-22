@@ -19,6 +19,8 @@
     <!-- Styles -->    
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     <link rel="stylesheet" href="css/main.css"> 
 </head>
@@ -34,9 +36,9 @@
 					</a>
 					<nav>
 						<ul class="nav__header">
-							<li><a href="">Works</a></li>
-							<li><a href="">Services</a></li>
-							<li><a href="">Why us</a></li>
+							<li><a href="#works">Works</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#why-us">Why us</a></li>
 						</ul>
 						<div class="talk"><a href="">Let's talk</a></div>
 						<div class="nav__burger">
@@ -52,7 +54,7 @@
 	</div>	
 </header>
 
-<section>
+<section id="works">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
@@ -62,38 +64,40 @@
 						<h1>Performance without <br> compromises</h1>
 						<p class="propose__text1">How we helped Blumarine to conquer new <br> businesses</p>
 						<a href="#">Discover</a>
+					</div>
+	
+					<div class="propose__image">
 						<div class="blu__text">
 							<p class="blu__text1">Blumarine</p>
 							<p class="blu__text2">Front end, Design UX/UI</p>
 						</div>
-					</div>
-	
-					<div class="propose__image">
-						<img src="img/Blauer Detroit D5_612.jpg" alt="Girl">
-						<div class="circle"></div>
-					
+						<div class="propose__carusel">
+							<div><img src="img/Blauer Detroit D5_612.jpg" alt="Girl"></div>
+							<div><img src="img/1536844093394027-279991-06A-007_F2_CMYK_printer-2.jpg" alt="Girl"></div>
+							<div><img src="img/unnamed.jpg" alt="Girl"></div>
+						</div>						
+					</div>					
+				</div>
+				<div class="circle"></div>
 <!-- ------------  pop-up  ---------------- -->
-						<div class="pop-up" id="pop-up">
-							<div class="pop-up__title">
-								<p>From our studio</p>
-								<span class="close-popup"><i class="fas fa-times"></i></span>								
-							</div>
-							<p class="weekly-email">Get a weekly email with inspirational contents from Zerogrey.</p>
-							<div class="input-group mb-3">
-								<input type="text" class="form-control" placeholder="write your e-mail" aria-label="write your e-mail" aria-describedby="button-addon2">
-								<div class="input-group-append">
-									<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-arrow-right"></i></button>
-								</div>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">
-									I read and accept the Privacy Policy
-								</label>
-							</div>
+				<div class="pop-up" id="pop-up">
+					<div class="pop-up__title">
+						<p>From our studio</p>
+						<span class="close-popup"><i class="fas fa-times"></i></span>								
+					</div>
+					<p class="weekly-email">Get a weekly email with inspirational contents from Zerogrey.</p>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="write your e-mail" aria-label="write your e-mail" aria-describedby="button-addon2">
+						<div class="input-group-append">
+							<button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-arrow-right"></i></button>
 						</div>
-
-			  	</div>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+						<label class="form-check-label" for="defaultCheck1">
+							I read and accept the Privacy Policy
+						</label>
+					</div>
 				</div>
 
 			</div>
@@ -112,13 +116,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-4">
-				<div class="business__help">
-					<h2>How can we <br> help your <br> business?</h2>
+			<div class="col-12 col-xl-3">
+				<div class="business__help" id="services">
+					<h2>How can we help your business?</h2>
 					<a href="#">Discover our services</a>
 				</div>
 			</div>
-			<div class="col-8">
+			<div class="col-12 col-xl-9">
 				<div class="solutions">
 					<div class="solutions_1">
 						<p class="idea">Merchant of records</p>
@@ -151,7 +155,7 @@
 	</div>
 </section>
 
-<section>
+<section id="why-us">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
@@ -166,15 +170,25 @@
 			</div>
 		</div>
 	</div>
-
 </section>
 
 <footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
 
+			</div>
+			<div class="col">
+				
+			</div>
+		</div>
+	</div>
 </footer>
 
 
-
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/style.js"></script>
 <script>
 	var modal = document.getElementById("pop-up");
 	var close = document.getElementsByClassName("close-popup")[0];
